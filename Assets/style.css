@@ -484,6 +484,8 @@ main {
 .formulario textarea {
     border-radius: 15px;
     padding: 9px;
+    border: solid var(--negro) 0.1px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, .6);
 }
 .btn-enviar{
     width: 25%;
