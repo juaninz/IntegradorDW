@@ -161,17 +161,23 @@ li a:focus {
 /* Main */
 main{
     background-color: var(--blanco);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.hero{
+.decoration{
     margin: 120px 0 0 0;
     background-color: var(--rojo);
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+}
+.hero{
     padding: 2rem;
-    max-width: 1200px;
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+    max-width: 1500px;
+    gap: 20px;
 }
 
 .hero-img{
@@ -195,6 +201,7 @@ main{
     gap: 15px;
     justify-content: space-evenly;
     font-size: 14px;
+    max-width: 300px;
 }
 
 .presentacion h2{
@@ -255,7 +262,6 @@ main{
     justify-content: space-between;
     border-top: solid var(--negro);
     border-bottom: solid var(--negro);
-    font-size: 12px;
     max-width: 1200px;
 }
 
@@ -284,8 +290,7 @@ main{
     justify-content: center;
     gap: 15px;
     text-align: justify;
-    width: 80%;
-    margin-right: 15px;
+    max-width: 500px;
 }
 
 
@@ -305,6 +310,7 @@ main{
         justify-content: center;
         align-items: center;
         width: 100%;
+        font-size: 14px;
     }
 }
 
