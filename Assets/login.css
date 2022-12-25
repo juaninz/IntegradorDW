@@ -19,7 +19,10 @@ html, body {
     font-weight: 600;
     letter-spacing: 0.6px;
     font-size: 16px;
-    background-color: var(--celeste);
+    background-image: url('./img/background-ice.jpg');
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
     color:  var(--negro);
 }
 
@@ -41,37 +44,37 @@ html, body {
     align-items: center;
 }
 
-.login__inputs {
-    width: 75%;
-    max-width: 600px;  
-}
-
-.login__inputs p {
+.login__inputs{
     display: flex;
     flex-direction: column;
-    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+    gap: 20px;
+    max-width: 600px;
 }
 
-.login__inputs p label {
-    padding-bottom: 10px
-}
-
-
-.login__inputs p input {
-    height: 40px;
+.login__inputs input{
     border: none;
-    padding: 0 20px;
+    padding: 10px;
     box-sizing: border-box;
     border-radius: 20px;
     color: var(--negro);
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, .6);
+    border: none;
 }
 
-
-.login__inputs p input::placeholder {
+.login__inputs input::placeholder {
     color:gray;
 }
 
-.login__inputs p button {
+.login__buttons{
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+.login__inputs button {
     width: 100%;
     height: 45px;
     background:  var(--negro);
@@ -83,9 +86,11 @@ html, body {
     letter-spacing: 0.6px;
     font-weight: 600;
     cursor: pointer;
+    padding: 10px 15px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, .6);
 }
 
-.login__inputs p button:hover {
+.login__inputs button:hover {
     background-color: var(--rojo);
     color: var(--negro);
 }
@@ -100,7 +105,7 @@ a {
     color: var(--blanco)
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 768px) {
     html,body{
         background: url('./img/background-ice.jpg') no-repeat;
         background-size: cover;
@@ -116,19 +121,7 @@ a {
         background-repeat: no-repeat;
         background-position: center;
     }
-    .login__inputs {
-        width: 100%;
-        height: 100%;
-        margin: auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .login__inputs p {
-        width: 70%;
-        margin: 10px 0;
-    }
+
     .content {
         width: 50%;
         background: var(--celeste);

@@ -37,7 +37,8 @@
     slide-left 1.3s ease-in-out;
 }
 
-.content{
+
+.container{
     animation: fade 1s ease-in,
     slide-up 1.3s ease-in-out;
 }
