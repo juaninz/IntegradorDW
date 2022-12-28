@@ -171,10 +171,12 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     scroll-behavior: smooth;
 }
 
 .decoration {
+    width: 100%;
     margin: 120px 0 0 0;
     background-color: var(--celeste);
     box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
@@ -393,6 +395,7 @@ main {
 /*productos*/
 
 #productos{
+    width: 100%;
     display: flex;
     flex-direction: column;
     background-color: var(--negro);
@@ -429,6 +432,11 @@ main {
     flex-direction: column;
     gap: 10px;
     border-radius: 15px;
+    cursor: pointer;
+}
+
+.productos-it:hover{
+    background-color: var(--celeste);
 }
 
 .productos-it button{
